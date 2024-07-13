@@ -39,3 +39,9 @@ Solana addresses do not include potentially ambiguous characters such as 0 (zero
 ## TODO
 
 I would love to make a gpu accelerated version of keypair generation. If you have any ideas on how to do this please let me know.
+
+## NOTE - July 12, 2024
+
+1. I found that we can generate solana vanity addresses directly using the solana cli. It's faster than our rust script since it doesn't convert each generated address to base58 and skips over several addresses by eliminating invalid ones. Refer to this page for more info on this - https://solana.com/developers/cookbook/wallets/generate-vanity-address
+
+2. I also found that someone has already made a gpu accelerated version of keypair generation. You can read more about it here - https://smith-mcf.medium.com/solana-vanity-address-using-gpus-5a68ad94d1d4
